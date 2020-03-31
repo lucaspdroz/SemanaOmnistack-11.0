@@ -1,6 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const routes = require('./routes');
 
+app.use(cors());
+
+// Production
+// app.use(cors({
+//     origin:'https://my-App.com'
+// }));
 
 const app = express();
 // use object Json
