@@ -9,3 +9,6 @@ First create:
 
 Update migrations:
 `npx knex migrate:latest`
+
+Undo migrations:
+`npx knex migrate:rollback`
